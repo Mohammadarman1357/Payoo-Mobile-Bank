@@ -26,3 +26,65 @@ document.getElementById("add-money-btn").addEventListener
 
         document.getElementById('available-balance').innerText = totalNewAvailableBalance
     })
+
+// toggling feature
+
+document.getElementById("add-button").addEventListener("click", function () {
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    document.getElementById("get-bonus-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
+    document.getElementById("transaction-history-parent").style.display = "none"
+
+    document.getElementById("add-money-parent").style.display = "block"
+})
+
+document.getElementById("cash-out-button").addEventListener("click", function () {
+    document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    document.getElementById("get-bonus-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
+    document.getElementById("transaction-history-parent").style.display = "none"
+
+    document.getElementById("cash-out-parent").style.display = "block"
+})
+
+document.getElementById("transfer-money-button").addEventListener("click", function () {
+    document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("get-bonus-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
+    document.getElementById("transaction-history-parent").style.display = "none"
+
+    document.getElementById("transfer-money-parent").style.display = "block"
+})
+
+document.getElementById("get-bonus-button").addEventListener("click", function () {
+    document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
+    document.getElementById("transaction-history-parent").style.display = "none"
+
+    document.getElementById("get-bonus-parent").style.display = "block"
+})
+
+document.getElementById("pay-bill-button").addEventListener("click", function () {
+    document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    document.getElementById("get-bonus-parent").style.display = "none"
+    document.getElementById("transaction-history-parent").style.display = "none"
+
+    document.getElementById("pay-bill-parent").style.display = "block"
+})
+
+document.getElementById("transaction-history-button").addEventListener("click", function () {
+    document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("transfer-money-parent").style.display = "none"
+    document.getElementById("get-bonus-parent").style.display = "none"
+    document.getElementById("pay-bill-parent").style.display = "none"
+
+    document.getElementById("transaction-history-parent").style.display = "block"
+})
